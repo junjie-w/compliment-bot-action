@@ -1,12 +1,10 @@
 name: Compliment Generator
 
 on:
-  push:
-    branches:
-      - "**"
   pull_request:
     branches:
       - main
+      - develop
 
 jobs:
   generate-compliment:
@@ -32,3 +30,10 @@ jobs:
         with:
           developer_name: 'Super Developer'
           compliment_style: 'motivational'
+
+      - name: Run Compliment Generator with Compliment Bot Action
+        uses: ./
+        with:
+          developer_name: 'Code Wizard'
+          compliment_style: 'funny'
+          
