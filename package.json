@@ -2,8 +2,9 @@
   "name": "compliment-bot-action",
   "version": "1.0.0",
   "description": "Generates a random, enthusiastic compliment with emojis on every push.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "ncc build src/index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.0",
+    "@vercel/ncc": "^0.38.2",
     "semantic-release": "^24.1.3"
   }
 }
