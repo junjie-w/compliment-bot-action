@@ -1,0 +1,20 @@
+name: Compliment Bot Action
+description: Generates a random, enthusiastic compliment with emojis on every push.
+
+inputs:
+  developer_name:
+    description: 'The name of the developer to compliment'
+    required: true
+    default: 'Awesome Developer'
+  compliment_style:
+    description: 'The style of compliment (enthusiastic, funny, motivational)'
+    required: true
+    default: 'enthusiastic'
+
+runs:
+  using: node16
+  main: src/index.js
+
+branding:
+  icon: 'award'
+  color: 'yellow'

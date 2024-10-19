@@ -1,0 +1,19 @@
+{
+  "name": "compliment-bot-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Junjie Wu",
+  "license": "ISC",
+  "description": "Generates a random, enthusiastic compliment with emojis on every push.",
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "semantic-release": "^24.1.3"
+  }
+}
