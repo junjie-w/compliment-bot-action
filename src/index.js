@@ -22,8 +22,7 @@ try {
   const developerName = core.getInput("developer_name");
   const complimentStyle = core.getInput("compliment_style");
 
-  const complimentArray =
-    compliments[complimentStyle] || compliments.enthusiastic;
+  const complimentArray = compliments[complimentStyle];
   const randomCompliment =
     complimentArray[Math.floor(Math.random() * complimentArray.length)];
 
