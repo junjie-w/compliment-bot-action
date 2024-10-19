@@ -1,13 +1,20 @@
 {
   "name": "compliment-bot-action",
   "version": "1.0.0",
+  "description": "Generates a random, enthusiastic compliment with emojis on every push.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junjie-w/compliment-bot-action.git"
+  },
   "author": "Junjie Wu",
-  "license": "ISC",
-  "description": "Generates a random, enthusiastic compliment with emojis on every push.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junjie-w/compliment-bot-action/issues"
+  },
   "dependencies": {
     "@actions/core": "^1.11.1"
   },
