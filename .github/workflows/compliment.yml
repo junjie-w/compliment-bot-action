@@ -22,9 +22,6 @@ jobs:
       - name: Build the action 
         run: npm run build
 
-      - name: List dist directory
-        run: ls -la dist
-
       - name: Remove node_modules
         run: rm -rf node_modules
         
