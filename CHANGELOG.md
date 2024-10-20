@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.0.1...v1.1.0) (2024-10-20)
+
+
+### Features
+
+* update compliment generation logic ([631fbdc](https://github.com/junjie-w/compliment-bot-action/commit/631fbdcebb3daa7895fbf4ccbb5cf67eae2b2e0a))
+
 ## [1.0.1](https://github.com/junjie-w/compliment-bot-action/compare/v1.0.0...v1.0.1) (2024-10-19)
 
 
