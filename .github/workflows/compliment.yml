@@ -22,6 +22,9 @@ jobs:
       - name: Build the action 
         run: npm run build
 
+      - name: List dist directory
+        run: ls -la dist
+
       - name: Remove node_modules
         run: rm -rf node_modules
         
@@ -32,7 +35,7 @@ jobs:
           compliment_style: 'motivational'
 
       - name: Run Compliment Generator with Compliment Bot Action
-        uses: junjie-w/compliment-bot-action@v1.0.0
+        uses: junjie-w/compliment-bot-action@v1.1.0
         with:
           developer_name: 'Code Wizard'
           compliment_style: 'funny'
