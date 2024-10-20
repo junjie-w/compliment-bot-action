@@ -22,6 +22,14 @@ try {
   const developerName = core.getInput("developer_name");
   const complimentStyle = core.getInput("compliment_style");
 
+  if (!compliments[complimentStyle]) {
+    console.warn(
+      `Unknown compliment style: ${complimentStyle}. Choosing a random style.`
+    );
+    const styles = Object.keys(compliments);
+    complimentStyle = styles[Math.floor(Math.random() * styles.length)];
+  }
+
   const complimentArray = compliments[complimentStyle];
   const randomCompliment =
     complimentArray[Math.floor(Math.random() * complimentArray.length)];
