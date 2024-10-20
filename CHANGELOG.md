@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.0...v1.1.1) (2024-10-20)
+
+
+### Bug Fixes
+
+* include dist in semantic release assets ([1f32de5](https://github.com/junjie-w/compliment-bot-action/commit/1f32de5234266548e86ed1165b8accae4830f2f7))
+
 # [1.1.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.0.1...v1.1.0) (2024-10-20)
 
 

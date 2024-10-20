@@ -1,6 +1,6 @@
 {
   "name": "compliment-bot-action",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Generates a random, enthusiastic compliment with emojis on every push.",
   "main": "dist/index.js",
   "scripts": {
