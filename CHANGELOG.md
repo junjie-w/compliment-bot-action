@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.1...v1.1.2) (2024-10-20)
+
+
+### Bug Fixes
+
+* update workflow to test the latest action version ([0273004](https://github.com/junjie-w/compliment-bot-action/commit/0273004bb12c4f34c13ab90a8b6a7e72d9ef15b3))
+
 ## [1.1.1](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.0...v1.1.1) (2024-10-20)
 
 
