@@ -25635,6 +25635,56 @@ module.exports = {
 
 /***/ }),
 
+/***/ 3156:
+/***/ ((module) => {
+
+const compliments = {
+  enthusiastic: [
+    "You're on fire! 🔥🔥🔥 Keep crushing it! 🚀",
+    "You're unstoppable! 💪 Let's dominate this code! 💻",
+    "Woohoo! You're amazing! 😎🙌 Keep up the great work! 🎉🎉",
+  ],
+  funny: [
+    "You deserve a cookie for this push 🍪!",
+    "Holy code! You're making magic happen 🧙‍♂️✨!",
+    "If coding was an Olympic sport, you'd get gold 🥇💻!",
+  ],
+  motivational: [
+    "Keep pushing! You're doing incredible work 🚀",
+    "Believe in your code! It's changing the world 🌍",
+    "You've got this! Every line of code counts 🧠💻",
+  ],
+};
+
+const getRandomElement = (array) => {
+  return array[Math.floor(Math.random() * array.length)];
+};
+
+const generateCompliment = (developerName, complimentStyle) => {
+  if (!compliments[complimentStyle]) {
+    console.warn(
+      `Unknown compliment style: ${complimentStyle}. Choosing a random style.`
+    );
+  }
+  const style = compliments[complimentStyle]
+    ? complimentStyle
+    : getRandomElement(Object.keys(compliments));
+
+  const complimentArray = compliments[style];
+  const randomCompliment = getRandomElement(complimentArray);
+
+  return `🎉 Hey ${developerName}, ${randomCompliment}`;
+};
+
+module.exports = {
+  compliments,
+  getRandomElement,
+  generateCompliment,
+};
+
+
+/***/ }),
+
 /***/ 2613:
 /***/ ((module) => {
 
@@ -27540,42 +27590,15 @@ module.exports = parseParams
 /************************************************************************/
 var __webpack_exports__ = {};
 const core = __nccwpck_require__(7484);
-
-const compliments = {
-  enthusiastic: [
-    "You're on fire! 🔥🔥🔥 Keep crushing it! 🚀",
-    "You're unstoppable! 💪 Let's dominate this code! 💻",
-    "Woohoo! You're amazing! 😎🙌 Keep up the great work! 🎉🎉",
-  ],
-  funny: [
-    "You deserve a cookie for this push 🍪!",
-    "Holy code! You're making magic happen 🧙‍♂️✨!",
-    "If coding was an Olympic sport, you'd get gold 🥇💻!",
-  ],
-  motivational: [
-    "Keep pushing! You're doing incredible work 🚀",
-    "Believe in your code! It's changing the world 🌍",
-    "You've got this! Every line of code counts 🧠💻",
-  ],
-};
+const { generateCompliment } = __nccwpck_require__(3156);
 
 try {
   const developerName = core.getInput("developer_name");
   const complimentStyle = core.getInput("compliment_style");
 
-  if (!compliments[complimentStyle]) {
-    console.warn(
-      `Unknown compliment style: ${complimentStyle}. Choosing a random style.`
-    );
-    const styles = Object.keys(compliments);
-    complimentStyle = styles[Math.floor(Math.random() * styles.length)];
-  }
+  const compliment = generateCompliment(developerName, complimentStyle);
 
-  const complimentArray = compliments[complimentStyle];
-  const randomCompliment =
-    complimentArray[Math.floor(Math.random() * complimentArray.length)];
-
-  console.log(`🎉 Hey ${developerName}, ${randomCompliment}`);
+  console.log(compliment);
 } catch (error) {
   core.setFailed(`Action failed with error: ${error.message}`);
 }

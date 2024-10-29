@@ -1,0 +1,29 @@
+codecov:
+  require_ci_to_pass: true    
+  notify:
+    wait_for_ci: true         
+
+coverage:
+  status:
+    project:
+      default:
+        target: 80%          
+        threshold: 1%        
+    patch:
+      default:
+        target: 80%         
+
+  ignore:
+    - "src/__tests__/"      
+    - "dist/"              
+    - "coverage/"          
+    - "jest.config.js"     
+    - ".github/"          
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false    
+  require_base: false      
+  require_head: true       
+  hide_project_coverage: false  
