@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.2...v1.2.0) (2024-10-29)
+
+
+### Features
+
+* add codecov config ([7c3e8de](https://github.com/junjie-w/compliment-bot-action/commit/7c3e8de098dbc4bd60b284177eede4c1cedb237f))
+* add tests ([1fd151e](https://github.com/junjie-w/compliment-bot-action/commit/1fd151ecb2b40f9e2cda4695347b473a58a9fb4f))
+
 ## [1.1.2](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.1...v1.1.2) (2024-10-20)
 
 
