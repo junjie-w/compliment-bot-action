@@ -1,18 +1,18 @@
 const compliments = {
   enthusiastic: [
-    "You're on fire! 🔥🔥🔥 Keep crushing it! 🚀",
-    "You're unstoppable! 💪 Let's dominate this code! 💻",
-    "Woohoo! You're amazing! 😎🙌 Keep up the great work! 🎉🎉",
+    'You\'re on fire! 🔥🔥🔥 Keep crushing it! 🚀',
+    'You\'re unstoppable! 💪 Let\'s dominate this code! 💻',
+    'Woohoo! You\'re amazing! 😎🙌 Keep up the great work! 🎉🎉',
   ],
   funny: [
-    "You deserve a cookie for this push 🍪!",
-    "Holy code! You're making magic happen 🧙‍♂️✨!",
-    "If coding was an Olympic sport, you'd get gold 🥇💻!",
+    'You deserve a cookie for this push 🍪!',
+    'Holy code! You\'re making magic happen 🧙‍♂️✨!',
+    'If coding was an Olympic sport, you\'d get gold 🥇💻!',
   ],
   motivational: [
-    "Keep pushing! You're doing incredible work 🚀",
-    "Believe in your code! It's changing the world 🌍",
-    "You've got this! Every line of code counts 🧠💻",
+    'Keep pushing! You\'re doing incredible work 🚀',
+    'Believe in your code! It\'s changing the world 🌍',
+    'You\'ve got this! Every line of code counts 🧠💻',
   ],
 };
 
