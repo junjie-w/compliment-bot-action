@@ -1,4 +1,4 @@
-name: Compliment Generator
+name: Example - Compliment Generator
 
 on:
   pull_request:
