@@ -3,6 +3,8 @@ name: Example - Compliment Generator
 on:
   pull_request:
     branches: [main, develop]
+  push:
+    branches: [main, develop]
 
 jobs:
   generate-compliment:
