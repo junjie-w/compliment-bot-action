@@ -1,3 +1,20 @@
+# [1.3.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.2.0...v1.3.0) (2024-11-01)
+
+
+### Bug Fixes
+
+* update commitlint config ([90f7383](https://github.com/junjie-w/compliment-bot-action/commit/90f73838eaa5e2fdf60e9399e3a9194627b33d0d))
+* update workflow and release config ([85b2800](https://github.com/junjie-w/compliment-bot-action/commit/85b2800553057b6f695cc8dc1dce2f5a4adf220b))
+* update workflow config ([0b7889e](https://github.com/junjie-w/compliment-bot-action/commit/0b7889e187f1fb2ab5a5d00dc1378036d0842f7b))
+* update workflow triggers ([f3c447c](https://github.com/junjie-w/compliment-bot-action/commit/f3c447c4eed66839596af0565274d9340d275ed2))
+
+
+### Features
+
+* add eslint config ([0dc21fe](https://github.com/junjie-w/compliment-bot-action/commit/0dc21fe0efb2ee99e02abf2440ad65d6e4c0a4f2))
+* add husky and update lint config ([7f5aace](https://github.com/junjie-w/compliment-bot-action/commit/7f5aace46247478bd136219f5febeacecbe6b7e4))
+* add readme ([c349cf4](https://github.com/junjie-w/compliment-bot-action/commit/c349cf40d30aa4e938221f551a29eebd8eef6a9a))
+
 # [1.2.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.1.2...v1.2.0) (2024-10-29)
 
 

@@ -25640,19 +25640,19 @@ module.exports = {
 
 const compliments = {
   enthusiastic: [
-    "You're on fire! 🔥🔥🔥 Keep crushing it! 🚀",
-    "You're unstoppable! 💪 Let's dominate this code! 💻",
-    "Woohoo! You're amazing! 😎🙌 Keep up the great work! 🎉🎉",
+    'You\'re on fire! 🔥🔥🔥 Keep crushing it! 🚀',
+    'You\'re unstoppable! 💪 Let\'s dominate this code! 💻',
+    'Woohoo! You\'re amazing! 😎🙌 Keep up the great work! 🎉🎉',
   ],
   funny: [
-    "You deserve a cookie for this push 🍪!",
-    "Holy code! You're making magic happen 🧙‍♂️✨!",
-    "If coding was an Olympic sport, you'd get gold 🥇💻!",
+    'You deserve a cookie for this push 🍪!',
+    'Holy code! You\'re making magic happen 🧙‍♂️✨!',
+    'If coding was an Olympic sport, you\'d get gold 🥇💻!',
   ],
   motivational: [
-    "Keep pushing! You're doing incredible work 🚀",
-    "Believe in your code! It's changing the world 🌍",
-    "You've got this! Every line of code counts 🧠💻",
+    'Keep pushing! You\'re doing incredible work 🚀',
+    'Believe in your code! It\'s changing the world 🌍',
+    'You\'ve got this! Every line of code counts 🧠💻',
   ],
 };
 
@@ -27590,11 +27590,12 @@ module.exports = parseParams
 /************************************************************************/
 var __webpack_exports__ = {};
 const core = __nccwpck_require__(7484);
+
 const { generateCompliment } = __nccwpck_require__(3156);
 
 try {
-  const developerName = core.getInput("developer_name");
-  const complimentStyle = core.getInput("compliment_style");
+  const developerName = core.getInput('developer_name');
+  const complimentStyle = core.getInput('compliment_style');
 
   const compliment = generateCompliment(developerName, complimentStyle);
 
