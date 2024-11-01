@@ -3,18 +3,18 @@ description: Generates a random, enthusiastic compliment with emojis on every pu
 
 inputs:
   developer_name:
-    description: 'The name of the developer to compliment'
+    description: The name of the developer to compliment
     required: true
-    default: 'Awesome Developer'
+    default: Awesome Developer
   compliment_style:
-    description: 'The style of compliment (enthusiastic, funny, motivational)'
+    description: "The style of compliment (enthusiastic, funny, motivational)"
     required: true
-    default: 'enthusiastic'
+    default: enthusiastic
 
 runs:
-  using: node16
+  using: node20
   main: dist/index.js
 
 branding:
-  icon: 'award'
-  color: 'yellow'
+  icon: award
+  color: yellow

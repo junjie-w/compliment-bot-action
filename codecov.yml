@@ -14,11 +14,11 @@ coverage:
         target: 80%         
 
   ignore:
-    - "src/__tests__/"      
-    - "dist/"              
-    - "coverage/"          
-    - "jest.config.js"     
-    - ".github/"          
+    - src/__tests__/      
+    - dist/              
+    - coverage/          
+    - jest.config.js     
+    - .github/          
 
 comment:
   layout: "reach, diff, flags, files"

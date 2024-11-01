@@ -2,9 +2,9 @@ name: Example - Compliment Generator
 
 on:
   pull_request:
-    branches:
-      - main
-      - develop
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
 
 jobs:
   generate-compliment:
@@ -12,9 +12,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20.8.1
+          cache: npm
           
       - name: Install dependencies
         run: npm ci
@@ -24,16 +26,15 @@ jobs:
 
       - name: Remove node_modules
         run: rm -rf node_modules
-        
-      - name: Run Compliment Generator with Compliment Bot Action
+      
+      - name: Run Compliment Generator with Local Compliment Bot Action
         uses: ./
         with:
-          developer_name: 'Super Developer'
-          compliment_style: 'motivational'
+          developer_name: Super Developer
+          compliment_style: motivational
 
-      - name: Run Compliment Generator with Compliment Bot Action
+      - name: Run Compliment Generator with Released Compliment Bot Action
         uses: junjie-w/compliment-bot-action@main
         with:
-          developer_name: 'Code Wizard'
-          compliment_style: 'funny'
-          
+          developer_name: Code Wizard
+          compliment_style: funny
