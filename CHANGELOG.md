@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/junjie-w/compliment-bot-action/compare/v1.3.0...v1.3.1) (2024-11-01)
+
+
+### Bug Fixes
+
+* update release config ([ad47ca1](https://github.com/junjie-w/compliment-bot-action/commit/ad47ca13027aeca10441b46c45337b33b1bda0e1))
+* update release workflow ([029eb33](https://github.com/junjie-w/compliment-bot-action/commit/029eb33be4b04323fdff5857265e9def7b2828fb))
+
 # [1.3.0](https://github.com/junjie-w/compliment-bot-action/compare/v1.2.0...v1.3.0) (2024-11-01)
 
 
